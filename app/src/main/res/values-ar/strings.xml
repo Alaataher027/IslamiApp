@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IslamiApp</string>
+    <string name="tasbeeh">التسبيح</string>
+    <string name="raido">الراديو</string>
+    <string name="quran">القرآن</string>
+    <string name="number_of_tasbe7at">عدد التسبيحات</string>
+    <string name="sob7anallah">"سبحان الله "</string>
+    <string name="eza3et_alqouran">اذاعة القرآن الكريم</string>
+    <string name="hadith">الحديث</string>
+    <string name="islami">إسلامى</string>
+    <string name="alhamdolellah">الحمد لله</string>
+    <string name="asta8feroallah">استغفر الله</string>
+</resources>

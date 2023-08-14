@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">IslamiApp</string>
+    <string name="tasbeeh" translatable="false">Tasbeeh</string>
+    <string name="raido" translatable="false">Raido</string>
+    <string name="quran" translatable="false">Quran</string>
+    <string name="number_of_tasbe7at" translatable="false">number of tasbe7at</string>
+    <string name="sob7anallah" translatable="false">sob7anallah</string>
+    <string name="eza3et_alqouran" translatable="false">eza3et alqouran</string>
+    <string name="hadith" translatable="false">hadith</string>
+    <string name="islami" translatable="false">islami</string>
+    <string name="alhamdolellah">Alhamdolellah</string>
+    <string name="asta8feroallah">Asta8feroallah</string>
+
+</resources>
