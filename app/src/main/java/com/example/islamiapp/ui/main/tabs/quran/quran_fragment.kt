@@ -1,11 +1,15 @@
 package com.example.islamiapp.ui.main.tabs.quran
 
+import android.content.Intent
 import android.os.Bundle
+import android.provider.SyncStateContract.Constants
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.islamiapp.databinding.FragmentQuranBinding
+import com.example.islamiapp.ui.chapterDetails.chapterDetailsActivity
+import com.example.islamiapp.ui.constants
 
 class quran_fragment :Fragment() {
     lateinit var viewBinding: FragmentQuranBinding
@@ -41,12 +45,22 @@ class quran_fragment :Fragment() {
     private fun initRecyclerView() {
         adapter = ChapterNameRecyclerAdapter(names)
         adapter.onItemClickListener=
-            ChapterNameRecyclerAdapter.OnItemClickListener{position, names ->
-            //send chapter name - position to SuraDetailsActivity
-            // start SuraDetailsActivity
+            ChapterNameRecyclerAdapter.OnItemClickListener{position, name ->
+            startChapterDetailsScreen(position, name)
 
         }
 
         viewBinding.rvQran.adapter = adapter
+    }
+
+    private fun startChapterDetailsScreen(index: Int, name: String) {
+        val intent = Intent(context, chapterDetailsActivity::class.java)
+        // context >>  because i am in a fragment , then , (this) parameter is wrong
+
+        intent.putExtra(constants.EXTRA_CAPTER_INDEX, index+1)
+        intent.putExtra(constants.EXTRA_CAPTER_NAME, name)
+        startActivity(intent)
+
+
     }
 }
