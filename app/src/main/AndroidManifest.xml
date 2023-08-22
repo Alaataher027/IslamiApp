@@ -26,6 +26,9 @@
             android:name=".ui.main.MainActivity"
             android:exported="false"/>
 
+        <activity android:name=".ui.chapterDetails.chapterDetailsActivity"
+            android:exported="false"
+            />
     </application>
 
 </manifest>
