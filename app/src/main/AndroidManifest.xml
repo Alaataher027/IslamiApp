@@ -29,6 +29,10 @@
         <activity android:name=".ui.chapterDetails.chapterDetailsActivity"
             android:exported="false"
             />
+
+        <activity android:name=".ui.hadethDetails.HadethDetailsActivity"
+            android:exported="false"
+            />
     </application>
 
 </manifest>
